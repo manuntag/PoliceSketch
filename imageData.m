@@ -10,20 +10,18 @@
 
 @implementation imageData
 
--(NSArray*)eyesImageArray {
+-(NSArray*)eyesImageArrays {
     
-    _eyesImageArray = @[@"eyes_1.jpg",@"eyes_2.jpg",@"eyes_3.jpg",@"eyes_4.jpg",@"eyes_5.jpg"];
-    
-    
+    _eyesImageArray =  @[@"eyes_1.jpg",@"eyes_2.jpg",@"eyes_3.jpg",@"eyes_4.jpg",@"eyes_5.jpg"];
+  
     return self.eyesImageArray;
 }
 
 
 
--(NSArray*)noseImageArray {
+-(NSArray*)noseImageArrays {
     
     _noseImageArray = @[@"nose_1.jpg",@"nose_2.jpg",@"nose_3.jpg",@"nose_4.jpg",@"nose_5.jpg"];
-    
     
     return self.noseImageArray;
     
@@ -31,11 +29,9 @@
 
 
 
--(NSArray*)mouthImageArray {
-    
+-(NSArray*)mouthImageArrays {
     
     _mouthImageArray = @[@"mouth_1.jpg", @"mouth_2.jpg", @"mouth_3.jpg", @"mouth_4.jpg", @"mouth_5.jpg"];
-    
     
     return self.mouthImageArray;
     

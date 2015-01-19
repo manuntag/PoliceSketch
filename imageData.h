@@ -14,8 +14,8 @@
 @property (strong, nonatomic) NSArray * noseImageArray;
 @property (strong, nonatomic) NSArray * mouthImageArray;
 
--(NSArray*)eyesImageArray;
--(NSArray*)noseImageArray;
--(NSArray*)mouthImageArray;
+-(NSArray*)eyesImageArrays;
+-(NSArray*)noseImageArrays;
+-(NSArray*)mouthImageArrays;
 
 @end
