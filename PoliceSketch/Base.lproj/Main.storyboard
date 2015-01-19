@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,17 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xqt-rZ-He3">
-                                <rect key="frame" x="60" y="102" width="200" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xqt-rZ-He3">
+                                <rect key="frame" x="60" y="155" width="200" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3Q-QF-vDR">
-                                <rect key="frame" x="60" y="254" width="200" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l3Q-QF-vDR">
+                                <rect key="frame" x="60" y="263" width="200" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXs-1X-ixl">
-                                <rect key="frame" x="60" y="406" width="200" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sXs-1X-ixl">
+                                <rect key="frame" x="60" y="371" width="200" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHr-SH-iJ5">
-                                <rect key="frame" x="274" y="137" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHr-SH-iJ5">
+                                <rect key="frame" x="274" y="190" width="30" height="30"/>
                                 <state key="normal" title="R1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,8 +35,8 @@
                                     <action selector="eyesRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vcb-t0-qUg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-pv-lWM">
-                                <rect key="frame" x="16" y="137" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-pv-lWM">
+                                <rect key="frame" x="16" y="190" width="30" height="30"/>
                                 <state key="normal" title="L1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,8 +44,8 @@
                                     <action selector="eyesLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oeK-j9-dsd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdO-eF-tbv">
-                                <rect key="frame" x="16" y="441" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdO-eF-tbv">
+                                <rect key="frame" x="16" y="406" width="30" height="30"/>
                                 <state key="normal" title="L3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,8 +53,8 @@
                                     <action selector="mouthLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DAL-o8-M7o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRT-SY-AnK">
-                                <rect key="frame" x="16" y="289" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRT-SY-AnK">
+                                <rect key="frame" x="16" y="298" width="30" height="30"/>
                                 <state key="normal" title="L2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -61,8 +62,8 @@
                                     <action selector="noseLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QLG-OS-2f7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-Ss-EDn">
-                                <rect key="frame" x="274" y="289" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-Ss-EDn">
+                                <rect key="frame" x="274" y="298" width="30" height="30"/>
                                 <state key="normal" title="R2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -70,8 +71,18 @@
                                     <action selector="noseRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gYg-fQ-mUQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBg-LM-FyE">
-                                <rect key="frame" x="274" y="441" width="30" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perp Sketcher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRp-ES-RKo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="g6p-nc-6J1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBg-LM-FyE">
+                                <rect key="frame" x="274" y="406" width="30" height="30"/>
                                 <state key="normal" title="R3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -79,15 +90,37 @@
                                     <action selector="mouthRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Vc-7O-riK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perp Sketcher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRp-ES-RKo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xRp-ES-RKo" firstAttribute="centerX" secondItem="Xqt-rZ-He3" secondAttribute="centerX" id="0ae-fy-luz"/>
+                            <constraint firstItem="nRT-SY-AnK" firstAttribute="baseline" secondItem="IQ2-Ss-EDn" secondAttribute="baseline" id="58o-Uz-KXB"/>
+                            <constraint firstAttribute="trailing" secondItem="xRp-ES-RKo" secondAttribute="trailing" id="6Vv-bE-Lp5"/>
+                            <constraint firstItem="Xqt-rZ-He3" firstAttribute="centerY" secondItem="xMQ-pv-lWM" secondAttribute="centerY" id="BbQ-v8-H0b"/>
+                            <constraint firstItem="xMQ-pv-lWM" firstAttribute="top" secondItem="xRp-ES-RKo" secondAttribute="bottom" constant="116" id="Bkq-Rc-WUa"/>
+                            <constraint firstItem="l3Q-QF-vDR" firstAttribute="trailing" secondItem="sXs-1X-ixl" secondAttribute="trailing" id="DSA-Hc-82K"/>
+                            <constraint firstItem="kdO-eF-tbv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="G1g-Yo-opa"/>
+                            <constraint firstItem="sXs-1X-ixl" firstAttribute="top" secondItem="l3Q-QF-vDR" secondAttribute="bottom" constant="8" id="JdD-CZ-ceB"/>
+                            <constraint firstItem="l3Q-QF-vDR" firstAttribute="top" secondItem="Xqt-rZ-He3" secondAttribute="bottom" constant="8" id="LOM-OY-wyL"/>
+                            <constraint firstItem="xRp-ES-RKo" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="MbR-ZR-Avv"/>
+                            <constraint firstItem="bHr-SH-iJ5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="P2q-PB-kVw"/>
+                            <constraint firstItem="cBg-LM-FyE" firstAttribute="leading" secondItem="IQ2-Ss-EDn" secondAttribute="leading" id="Pbo-hI-uxb"/>
+                            <constraint firstItem="Xqt-rZ-He3" firstAttribute="leading" secondItem="xMQ-pv-lWM" secondAttribute="trailing" constant="14" id="SWB-dp-B2B"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="sXs-1X-ixl" secondAttribute="bottom" constant="97" id="UeW-vH-s5W"/>
+                            <constraint firstItem="kdO-eF-tbv" firstAttribute="baseline" secondItem="cBg-LM-FyE" secondAttribute="baseline" id="WfY-AP-4Qw"/>
+                            <constraint firstItem="bHr-SH-iJ5" firstAttribute="baseline" secondItem="xMQ-pv-lWM" secondAttribute="baseline" id="XCi-X6-laB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kdO-eF-tbv" secondAttribute="bottom" constant="132" id="cB9-yp-xyi"/>
+                            <constraint firstItem="kdO-eF-tbv" firstAttribute="leading" secondItem="nRT-SY-AnK" secondAttribute="leading" id="gGH-Yw-uEA"/>
+                            <constraint firstItem="xRp-ES-RKo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gPp-ON-0Ue"/>
+                            <constraint firstItem="l3Q-QF-vDR" firstAttribute="leading" secondItem="Xqt-rZ-He3" secondAttribute="leading" id="ljp-hd-wY8"/>
+                            <constraint firstItem="Xqt-rZ-He3" firstAttribute="top" secondItem="xRp-ES-RKo" secondAttribute="bottom" constant="81" id="m8E-Ng-oYf"/>
+                            <constraint firstItem="IQ2-Ss-EDn" firstAttribute="leading" secondItem="bHr-SH-iJ5" secondAttribute="leading" id="pmG-0B-tC9"/>
+                            <constraint firstItem="nRT-SY-AnK" firstAttribute="leading" secondItem="xMQ-pv-lWM" secondAttribute="leading" id="qZk-Ms-LZF"/>
+                            <constraint firstItem="nRT-SY-AnK" firstAttribute="centerY" secondItem="l3Q-QF-vDR" secondAttribute="centerY" id="sCI-mL-ty3"/>
+                            <constraint firstItem="l3Q-QF-vDR" firstAttribute="leading" secondItem="sXs-1X-ixl" secondAttribute="leading" id="saO-ex-yiF"/>
+                            <constraint firstItem="sXs-1X-ixl" firstAttribute="centerY" secondItem="kdO-eF-tbv" secondAttribute="centerY" id="vRF-jU-Mwy"/>
+                            <constraint firstItem="l3Q-QF-vDR" firstAttribute="trailing" secondItem="Xqt-rZ-He3" secondAttribute="trailing" id="ydo-X1-qIO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="eyesImageView" destination="Xqt-rZ-He3" id="Fa5-Nc-zoh"/>

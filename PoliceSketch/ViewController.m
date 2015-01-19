@@ -26,8 +26,6 @@
 @property (strong, nonatomic) Logic * mouthModel;
 
 
-
-
 @end
 
 @implementation ViewController
@@ -43,11 +41,8 @@
     self.eyesModel = [[Logic alloc]initWithImageArray:imagedata.eyesImageArrays];
     self.eyesImageView.image = [self.eyesModel currentImage];
     
-    
-    
     self.noseModel = [[Logic alloc]initWithImageArray:imagedata.noseImageArrays];
     self.noseImageView.image = [self.noseModel currentImage];
-    
     
     self.mouthModel = [[Logic alloc]initWithImageArray:imagedata.mouthImageArrays];
     self.mouthImageView.image = [self.mouthModel currentImage]; 
@@ -59,37 +54,36 @@
 
 - (IBAction)eyesLeft:(id)sender {
     
-    [self.eyesModel previousImage];
+    self.eyesImageView.image = [self.eyesModel previousImage];
     
 }
 
 - (IBAction)eyesRight:(id)sender {
     
-    [self.eyesModel nextImage];
+    self.eyesImageView.image = [self.eyesModel nextImage];
     
 }
 
 - (IBAction)noseLeft:(id)sender {
-    
 
-    [self.noseModel previousImage];
+   self.noseImageView.image  =  [self.noseModel previousImage];
 }
 
 - (IBAction)noseRight:(id)sender {
     
-    [self.noseModel nextImage];
+self.noseImageView.image = [self.noseModel nextImage];
     
 }
 
 - (IBAction)mouthLeft:(id)sender {
     
-    [self.mouthModel previousImage];
+ self.mouthImageView.image = [self.mouthModel previousImage];
     
 }
 
 - (IBAction)mouthRight:(id)sender {
     
-    [self.mouthModel nextImage]; 
+  self.mouthImageView.image =[self.mouthModel nextImage];
     
 }
 

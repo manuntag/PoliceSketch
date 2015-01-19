@@ -34,9 +34,9 @@
 
 -(UIImage*)nextImage {
     
-    self.currentImageIndex = ++self.currentImageIndex;
+    ++self.currentImageIndex;
     
-    if (self.currentImageIndex>self.imageArray.count) {
+    if (self.currentImageIndex>=self.imageArray.count) {
         
         self.currentImageIndex = 0;
         
@@ -47,9 +47,9 @@
 }
 -(UIImage*)previousImage {
     
-    self.currentImageIndex = --self.currentImageIndex;
+     --self.currentImageIndex;
     
-    if (self.currentImageIndex<=self.imageArray.count) {
+    if (self.currentImageIndex < 0) {
         
         self.currentImageIndex = self.imageArray.count -1;
     }

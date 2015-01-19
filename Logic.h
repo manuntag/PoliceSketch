@@ -10,7 +10,6 @@
 @import UIKit;
 
 
-
 @interface Logic : NSObject
 
 //properties to hold current image index, image array
