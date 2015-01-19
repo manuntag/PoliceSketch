@@ -32,10 +32,15 @@
 }
 
 
-
 -(UIImage*)nextImage {
     
     self.currentImageIndex = ++self.currentImageIndex;
+    
+    if (self.currentImageIndex>self.imageArray.count) {
+        
+        self.currentImageIndex = 0;
+        
+    }
     
     return self.currentImage;
     
@@ -44,8 +49,12 @@
     
     self.currentImageIndex = --self.currentImageIndex;
     
-    return self.currentImage;
+    if (self.currentImageIndex<=self.imageArray.count) {
+        
+        self.currentImageIndex = self.imageArray.count -1;
+    }
     
+    return self.currentImage;
     
 }
 
