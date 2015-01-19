@@ -30,36 +30,54 @@
                                 <state key="normal" title="R1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="eyesRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vcb-t0-qUg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-pv-lWM">
                                 <rect key="frame" x="16" y="137" width="30" height="30"/>
                                 <state key="normal" title="L1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="eyesLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oeK-j9-dsd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdO-eF-tbv">
                                 <rect key="frame" x="16" y="441" width="30" height="30"/>
                                 <state key="normal" title="L3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mouthLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DAL-o8-M7o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRT-SY-AnK">
                                 <rect key="frame" x="16" y="289" width="30" height="30"/>
                                 <state key="normal" title="L2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="noseLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QLG-OS-2f7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-Ss-EDn">
                                 <rect key="frame" x="274" y="289" width="30" height="30"/>
                                 <state key="normal" title="R2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="noseRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gYg-fQ-mUQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBg-LM-FyE">
                                 <rect key="frame" x="274" y="441" width="30" height="30"/>
                                 <state key="normal" title="R3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mouthRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Vc-7O-riK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Perp Sketcher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRp-ES-RKo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
@@ -71,6 +89,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="eyesImageView" destination="Xqt-rZ-He3" id="Fa5-Nc-zoh"/>
+                        <outlet property="mouthImageView" destination="sXs-1X-ixl" id="aks-Q4-qRO"/>
+                        <outlet property="noseImageView" destination="l3Q-QF-vDR" id="k9I-d7-lZv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,18 +10,56 @@
 
 @interface ViewController ()
 
+
+// Imageviews
+@property (strong, nonatomic) IBOutlet UIImageView *eyesImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *noseImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *mouthImageView;
+
+
+// properties for logic objects
+
+
+
+
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+// alloc and init logic objects with image array
+    
+    
+    
+    
+    
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+// buttons
+
+- (IBAction)eyesLeft:(id)sender {
 }
+
+- (IBAction)eyesRight:(id)sender {
+}
+
+- (IBAction)noseLeft:(id)sender {
+}
+
+- (IBAction)noseRight:(id)sender {
+}
+
+- (IBAction)mouthLeft:(id)sender {
+}
+
+- (IBAction)mouthRight:(id)sender {
+}
+
 
 @end

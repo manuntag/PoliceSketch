@@ -31,6 +31,7 @@
 		8A92BD6E1A6D810800071D24 /* nose_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A92BD5D1A6D810800071D24 /* nose_3.jpg */; };
 		8A92BD6F1A6D810800071D24 /* nose_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A92BD5E1A6D810800071D24 /* nose_4.jpg */; };
 		8A92BD701A6D810800071D24 /* nose_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A92BD5F1A6D810800071D24 /* nose_5.jpg */; };
+		8A92BD731A6D84A300071D24 /* Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A92BD721A6D84A300071D24 /* Logic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		8A92BD5D1A6D810800071D24 /* nose_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nose_3.jpg; sourceTree = "<group>"; };
 		8A92BD5E1A6D810800071D24 /* nose_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nose_4.jpg; sourceTree = "<group>"; };
 		8A92BD5F1A6D810800071D24 /* nose_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nose_5.jpg; sourceTree = "<group>"; };
+		8A92BD711A6D84A300071D24 /* Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logic.h; path = ../Logic.h; sourceTree = "<group>"; };
+		8A92BD721A6D84A300071D24 /* Logic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logic.m; path = ../Logic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +100,6 @@
 		8A92BD1C1A6D80B600071D24 = {
 			isa = PBXGroup;
 			children = (
-				8A92BD4E1A6D810800071D24 /* policeSketchImages */,
 				8A92BD271A6D80B600071D24 /* PoliceSketch */,
 				8A92BD411A6D80B700071D24 /* PoliceSketchTests */,
 				8A92BD261A6D80B600071D24 /* Products */,
@@ -116,10 +118,12 @@
 		8A92BD271A6D80B600071D24 /* PoliceSketch */ = {
 			isa = PBXGroup;
 			children = (
-				8A92BD2F1A6D80B700071D24 /* ViewController.h */,
+				8A92BD711A6D84A300071D24 /* Logic.h */,
+				8A92BD721A6D84A300071D24 /* Logic.m */,
 				8A92BD301A6D80B700071D24 /* ViewController.m */,
 				8A92BD321A6D80B700071D24 /* Main.storyboard */,
 				8A92BD351A6D80B700071D24 /* Images.xcassets */,
+				8A92BD4E1A6D810800071D24 /* policeSketchImages */,
 				8A92BD281A6D80B600071D24 /* Supporting Files */,
 			);
 			path = PoliceSketch;
@@ -128,6 +132,7 @@
 		8A92BD281A6D80B600071D24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A92BD2F1A6D80B700071D24 /* ViewController.h */,
 				8A92BD371A6D80B700071D24 /* LaunchScreen.xib */,
 				8A92BD2C1A6D80B600071D24 /* AppDelegate.h */,
 				8A92BD2D1A6D80B700071D24 /* AppDelegate.m */,
@@ -175,7 +180,8 @@
 				8A92BD5E1A6D810800071D24 /* nose_4.jpg */,
 				8A92BD5F1A6D810800071D24 /* nose_5.jpg */,
 			);
-			path = policeSketchImages;
+			name = policeSketchImages;
+			path = ../policeSketchImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A92BD731A6D84A300071D24 /* Logic.m in Sources */,
 				8A92BD311A6D80B700071D24 /* ViewController.m in Sources */,
 				8A92BD2E1A6D80B700071D24 /* AppDelegate.m in Sources */,
 				8A92BD2B1A6D80B600071D24 /* main.m in Sources */,
