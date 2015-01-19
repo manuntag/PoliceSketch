@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Logic.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,11 @@
 @property (strong, nonatomic) IBOutlet UIImageView *mouthImageView;
 
 
-// properties for logic objects
+// properties for logic objects - eyes, nose, mouth
 
+@property (strong, nonatomic) Logic * eyesModel;
+@property (strong, nonatomic) Logic * noseModel;
+@property (strong, nonatomic) Logic * mouthModel;
 
 
 
